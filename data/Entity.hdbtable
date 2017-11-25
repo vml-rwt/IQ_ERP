@@ -1,0 +1,8 @@
+
+table.schemaName = "S0014462381";
+table.tableType = COLUMNSTORE;
+table.columns = [ 
+{name = "EntityCode"; sqlType = VARCHAR; length=50; nullable = false;},
+{name = "EntityDesc"; sqlType = VARCHAR; length=255; nullable = false;}
+];
+table.primaryKey.pkcolumns = ["EntityDesc"];

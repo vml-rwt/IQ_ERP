@@ -1,0 +1,20 @@
+namespace IQ_ERP.data ; 
+@Schema:'IQERP_Schema'context metadataModel{  
+@Catalog.tableType:#COLUMN 
+
+//Table for server instances details.
+entity SERVER_INSTANCES   {  
+key SERVER:      String(50); 
+SERVER_TYPE:      String(50); 
+STATUS:Boolean;
+} ;
+
+
+//Table for output messages
+entity MESSAGES{
+key MESSAGE_CODE:String(10); 
+MESSAGE_TYPE:   String(10); 
+MESSAGE:String(1000);
+};
+
+};

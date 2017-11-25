@@ -1,0 +1,9 @@
+{ 
+"exposed" : true, 
+"authentication" : 
+[ 
+{ "method" : "Basic" }
+] ,
+"prevent_xsrf" : false,
+ "anonymous_connection": null
+}

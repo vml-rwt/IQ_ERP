@@ -1,0 +1,8 @@
+
+table.schemaName = "S0014462381";
+table.tableType = COLUMNSTORE;
+table.columns = [ 
+{name = "ChatSeq"; sqlType = VARCHAR; length=50; nullable = false;},
+{name = "ChatContent"; sqlType = VARCHAR; length=500;  nullable = false;}
+];
+table.primaryKey.pkcolumns = ["ChatSeq"]; 

@@ -1,0 +1,19 @@
+<mvc:View controllerName="speechRecognition.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:layout="sap.ui.layout">
+	<App>
+		<pages>
+			<Page title="{i18n>title}" class="sapUiResponsiveContentPadding">
+				<content>
+					<TextArea id="idInput" width="100%" rows="10"></TextArea>
+					<Toolbar>
+						<Input id="idChatInput"/>
+						<ToolbarSpacer/>
+						<Button icon="sap-icon://microphone" tooltip="Audio Input" press="onBtnPrs"></Button>
+						<Button icon="sap-icon://media-reverse" tooltip="POST" press="onPostPrs"></Button>
+					</Toolbar>
+					<TextArea id="idTextArea" width="100%" rows="10"></TextArea>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

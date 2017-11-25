@@ -1,0 +1,9 @@
+
+table.schemaName = "S0014462381";
+table.tableType = COLUMNSTORE;
+table.columns = [ 
+{name = "ErrCode"; sqlType = VARCHAR; length=50; nullable = false;},
+{name = "ErrType"; sqlType = VARCHAR; length=255; nullable = false;},
+{name = "ErrMsg"; sqlType = VARCHAR; length=255;}
+];
+//table.primaryKey.pkcolumns = ["ContractType"];
