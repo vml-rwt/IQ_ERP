@@ -64,7 +64,7 @@ sap.ui.define([
 			var oPostData = {
 				"speech": sUserInput
 			};
-			var aUrl = '/iERP/xs/SendVoiceText.xsjs';
+			var aUrl = '/IQ_ERP/xs/SendVoiceText.xsjs';
 			jQuery.ajax({
 				url: aUrl,
 				method: 'POST',

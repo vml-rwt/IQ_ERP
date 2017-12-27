@@ -1,0 +1,11 @@
+host = "10.156.245.2";
+port = 8080;
+description = "destination to EC1";
+useSSL = false;
+pathPrefix = "/sap/opu/odata/SAP/ZVR_SAP_ODATA_SRV";
+proxyType = none;
+authType = basic;
+useProxy = false;
+proxyHost = "";
+proxyPort = 0;
+timeout = 0;

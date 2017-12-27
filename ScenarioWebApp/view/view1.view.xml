@@ -1,0 +1,93 @@
+<mvc:View controllerName="infosys.iqerpIQERP_Metadata.controller.view1" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content >
+					
+					 <l:Grid defaultSpan="L3 M3 S12" class="sapUiMediumMargin">
+				          <l:content>
+				            <VBox>
+				              <Label text="Scenario" class="labelHeadingClass" />
+				              <Input id="idScenario" value=""
+				                 width="80%"></Input>	
+							</VBox>
+							<VBox>
+				              <Label text="Entity" class="labelHeadingClass" />
+				              <Input id="idEntity" value=""
+				                 width="80%"></Input>	
+							</VBox>
+						</l:content>
+						</l:Grid>
+						
+						<Table id="idMetaDataTable" visible="true" inset="false"
+					          items="{path: '/'}">
+					          <columns>
+					            <Column hAlign="Left" width="8em" minScreenWidth="Tablet"
+					              demandPopin="true">
+					              <Text text="Entity" />
+					            </Column>
+					            <Column hAlign="Left" width="5em" minScreenWidth="Tablet"
+					              demandPopin="true">
+					              <Text text="TableName" />
+					            </Column>
+					            <Column hAlign="Left" id="resourceType2Column" width="8em"
+					              minScreenWidth="Tablet" demandPopin="true" visible="true">
+					              <Text text="Attribute" />
+					            </Column>
+					            <Column hAlign="Left" width="5em" minScreenWidth="Tablet"
+					              demandPopin="true">
+					              <Text text="Type_Attribute" />
+					            </Column>
+					            <Column hAlign="Left" width="3em" minScreenWidth="Tablet"
+					              demandPopin="true">
+					              <Text text="Length" />
+					            </Column>
+					            <Column hAlign="Left" width="4em" minScreenWidth="Tablet"
+					              demandPopin="true">
+					              <Text text="Searchable" />
+					            </Column>
+					            <Column hAlign="Left" width="6em" minScreenWidth="Tablet"
+					              demandPopin="true">
+					              <Text text="Possible Values" />
+					            </Column>
+					            <Column hAlign="Left" width="16em" minScreenWidth="Tablet"
+					              demandPopin="true">
+					              <Text text="Alternate Names" />
+					            </Column>
+					          </columns>
+					          <items>
+					            <ColumnListItem vAlign="Middle">
+					              <cells>
+					               
+					                <Input  value="{ENTITY}" width="80%" enabled="false"></Input>
+					                <Input  value="{TABNAME}" width="80%" enabled="false"></Input>
+					                <Input  value="{ATTRIBUTE}" width="80%" enabled="false"></Input>
+					                <Input  value="{TYPE_ATTRIBUTE}" width="80%" enabled="false"></Input>
+					                <Input  value="{LENGTH_ATTRIBUTE}" width="80%" enabled="true"></Input>
+					                <Select selectedKey="{SEARCHABLE}">
+						                  <items>
+						                    <core:Item text="Yes" key="Y" />
+						                    <core:Item text="No" key="N" />
+						                  </items>
+						            </Select>
+					                <Input  value="{POSSIBLE_VALUES}" width="80%" enabled="true"></Input>
+					                <Input  value="{ALTERNATE_NAMES}"  width="80%" enabled="true"></Input>
+					                      
+					              </cells>
+					            </ColumnListItem>
+					          </items>
+					        </Table>
+						
+				</content>
+				<footer>
+			      <Toolbar>
+			      	<Button type="Accept" width="20%" id="btnCreateSce" text="Create Snenario" enabled="true" press= "PressCreateSce" />
+			        <ToolbarSpacer/>
+			        <Button type="Accept" width="20%" id="btnConfigure" text="Configure" enabled="true" press= "PressConfigure" />
+			      </Toolbar>
+			    </footer>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

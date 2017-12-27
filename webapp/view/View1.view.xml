@@ -6,7 +6,7 @@
 				<content>
 					<TextArea id="idInput" width="100%" rows="10"></TextArea>
 					<Toolbar>
-						<Input id="idChatInput"/>
+						<TextArea id="idChatInput" width="100%" rows="1"/>
 						<ToolbarSpacer/>
 						<Button icon="sap-icon://microphone" tooltip="Audio Input" press="onBtnPrs"></Button>
 						<Button icon="sap-icon://media-reverse" tooltip="POST" press="onPostPrs"></Button>

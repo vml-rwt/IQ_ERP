@@ -12,5 +12,49 @@
     <entity_name standard_form="SHOW">
     </entity_name>
   </entity_category>
+  
+  <entity_category name="GREETINGS">
+    <entity_name standard_form="Hi">
+    </entity_name> 
+    <entity_name standard_form="Hello">
+    </entity_name>
+    <entity_name standard_form="Hey">
+    </entity_name>
+    <entity_name standard_form="How are you">
+    </entity_name>
+  </entity_category>
+  
+   <entity_category name="BUSINESS_OBJECT">
+    <entity_name standard_form="Material">
+    </entity_name> 
+    <entity_name standard_form="Customer">
+    </entity_name>
+    <entity_name standard_form="Sales order">
+    </entity_name>
+    <entity_name standard_form="Purchase order">
+    </entity_name>
+    <entity_name standard_form="Invoice">
+    </entity_name>
+    <entity_name standard_form="Purchase requisition">
+    </entity_name>
+    <entity_name standard_form="Vendor">
+    </entity_name>
+  </entity_category>
+  
+   <entity_category name="SERVER">
+   
+    <entity_name standard_form="CH1">
+    <variant name="CH 1"/>
+    </entity_name> 
+    <entity_name standard_form="CH2">
+    <variant name="CH 2" />
+    </entity_name>
+    <entity_name standard_form="EC0">
+     <variant name="EC 0" />
+      <variant name="EC O" />
+    </entity_name>
+    <entity_name standard_form="S4">
+    </entity_name>
+  </entity_category>
    
 </dictionary>

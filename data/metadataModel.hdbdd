@@ -2,11 +2,25 @@ namespace IQ_ERP.data ;
 @Schema:'IQERP_Schema'context metadataModel{  
 @Catalog.tableType:#COLUMN 
 
+//Table for chat messages
+// entity ChatDump{
+// userName : String(100);
+// sapUser:String(100);
+// timeStamp:String(100);
+// ChatContent:String(5000); 
+// };
+
+entity ChatAnalysis{
+userName : String(100);
+key ChatContent:String(5000); 
+};
+
 //Table for server instances details.
 entity SERVER_INSTANCES   {  
 key SERVER:      String(50); 
 SERVER_TYPE:      String(50); 
 STATUS:Boolean;
+ISDEFAULT:Boolean;
 } ;
 
 
@@ -15,6 +29,12 @@ entity MESSAGES{
 key MESSAGE_CODE:String(10); 
 MESSAGE_TYPE:   String(10); 
 MESSAGE:String(1000);
+};
+
+//Table Scenario and Entity
+entity Scenario{
+key SCENARIO:String(100); 
+ENTITY:   String(100); 
 };
 
 };
